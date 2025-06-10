@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Forms</title>
+  <style>
+    body {
+      background-color: rgb(240, 242, 242);
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Apply for Air Hostess</h1>
+  <h2>PIA (Pakistan International Airlines)</h2>
+
+  <form method="post" action="your-server-endpoint">
+    <div>
+      <h3>All about applicant</h3>
+      <div>
+        <label for="username">Enter the applicant name</label><br />
+        <input type="text" name="applicantName" id="username" placeholder="Name" />
+      </div>
+
+      <div>
+        <label for="father-name">Father name</label><br />
+        <input type="text" name="fatherName" id="father-name" placeholder="Father Name" autofocus />
+      </div>
+
+      <div>
+        <label for="gmail">Email</label><br />
+        <input type="email" name="gmail" id="gmail" placeholder="example@gmail.com" />
+      </div>
+
+      <div>
+        <label for="contact-no">Contact No</label><br />
+        <input type="tel" name="contactNo" id="contact-no" placeholder="Contact Number" />
+      </div>
+
+      <div>
+        <label for="dob">Date of Birth</label><br />
+        <input type="date" name="dob" id="dob" />
+      </div>
+    </div>
+
+    <div>
+      <h3>Gender</h3>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+
+      <input type="radio" id="neutral" name="gender" value="neutral" />
+      <label for="neutral">Neutral (any gender)</label>
+    </div>
+
+    <div>
+      <h3>Languages</h3>
+      <label><input type="checkbox" name="language" value="english" /> English</label><br />
+      <label><input type="checkbox" name="language" value="urdu" /> Urdu</label><br />
+      <label><input type="checkbox" name="language" value="arabic" /> Arabic</label><br />
+      <label><input type="checkbox" name="language" value="chinese" /> Chinese</label><br />
+    </div>
+
+    <br />
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
